@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Soft Views</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link type="text/css" href="css/cupertino/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.color.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/libs/raphael.js"></script>  
+    <script type="text/javascript" src="js/GlobalVariablesHandler.js"></script>
+    <script type="text/javascript" src="js/ResourcesHandler.js"></script>
+    <script type="text/javascript" src="js/CompositionHandler.js"></script> 
+    <script type="text/javascript" src="js/nodegraph.js"></script>
+    <script type="text/javascript" src="js/Main.js"></script>
+  </head>
+  <body>
+    <div id="openWin">
+      <div id="fileTitle">Files:</div>
+      <div id="files"></div>
+    </div>
+    <div id="overlay"></div>
+    <div id="sidebar_main">           
+       <div id="controls_main">
+	      <div id="save" class='btn'>
+	      <img width=65 src="images/save.png" 
+	        onmouseover="this.src='images/save_mo.png';" 
+	        onmouseout="this.src='images/save.png';" />
+	      </div>
+	      <div id="open" class='btn'>
+	      <img width=65 src="images/open.png" 
+	        onmouseover="this.src='images/open_mo.png';" 
+	        onmouseout="this.src='images/open.png';" />
+	      </div>
+	      <div id="clear" class='btn'>
+	      <img width=65 src="images/clear.png" 
+	        onmouseover="this.src='images/clear_mo.png';" 
+	        onmouseout="this.src='images/clear.png';" />
+	      </div>	      
+	    </div>                
+       <div id="views">         
+       <!--  Need to id compositions header here for resizing -->
+       	 <div id="compositions_header" class="view_header">
+             Classes
+         </div>
+         <div id="compositions_view" class="view_pane">           
+           <div class="main_content">           
+	       </div>
+		 </div>
+		 <div id="global_header" class="view_header">
+           Global Variables
+         </div>
+         <div id="global_view" class="view_pane">
+           <div class="main_content">
+	       </div>
+		 </div>
+		 <div id="resources_header" class="view_header">
+           Resources
+         </div>
+         <div id="resources_view" class="view_pane">
+           <div class="main_content">
+	       </div>
+		 </div>		                  
+       </div> 
+    </div>
+ 	<div id="canvas">
+ 	</div>
+
+  </body>
+</html>
+  

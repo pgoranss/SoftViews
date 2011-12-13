@@ -1,0 +1,191 @@
+body, html{
+  margin : 0;
+  padding : 0;
+  overflow : hidden;
+}
+
+#canvas{
+  display:inline;
+  height : 200px;	
+}
+
+#sidebar_main {
+	position : absolute;
+	height : 100%;	
+	background-color: #FBFBF9;	 
+}
+#controls_main {
+
+}
+#views {
+
+}
+.btn {
+	display : inline;	
+}
+
+.view_pane {
+	height : 200px;
+	width : 200px;
+	overflow : scroll;
+	cursor : pointer; 
+  	
+}
+.main_content {
+	cursor : pointer; 
+}
+.view_content {
+	width : 500px;
+}
+.view_header {
+  font-size : 10px;
+  font-weight : bold; 	
+  font-family: Georgia, serif;
+  background-color : #5C72A3;
+  color : white;
+  border : 1px solid white; 
+}
+
+.globalHighLight {  
+  font-size : 13px;
+  font-weight : bold; 
+  display : inline;
+}
+
+.compHighLight {  
+  font-size : 13px;
+  font-weight : bold; 
+   display : inline;
+}
+.resourceHighLight {  
+  font-size : 13px;
+  font-weight : bold; 
+   display : inline;
+}
+
+.inherited_header {
+  font-size : 10px;
+  font-weight : bold; 	
+  font-family: Georgia, serif;
+  text-decoration: underline;
+  display : block;	
+}
+.inherited_item {
+  font-size : 10px;
+  font-weight : bold; 	  
+  font-family: Georgia, serif;
+  color : #30404B;
+  display : block;	
+  text-align : left;
+}
+
+.inheritHighLight {	
+    background-color : #DADEC4;	
+}
+
+.varTxt {
+	color : #5C72A3;
+	cursor : pointer;	
+	font-size : 14px;     	 
+    font-family: Georgia, serif;	
+    font-weight : bold;     
+}
+.varTxt:hover {
+	text-decoration : underline;
+}
+
+.varFound {
+	color : #46577D;
+	cursor : pointer;
+	margin-left : 15px;
+	font-size : 10px;
+    font-weight : bold; 	  
+    font-family: Georgia, serif;	
+}
+.varFound:hover {
+	text-decoration : underline;
+}
+
+.showhideclass {
+	float : right;
+	display : inline;
+	color : blue;
+	text-decoration : underline;
+	font-size : 10px;
+    font-weight : bold; 	  
+    font-family: Georgia, serif;
+}
+.showhideclass:hover {
+	text-decoration : none;
+}
+
+#overlay{
+  position: absolute;
+  background : url("../images/trans.gif");
+  z-index : 5000;
+  cursor: pointer;
+}
+
+#openWin{
+  position : absolute;
+  top : 50px;
+  left : 20px;
+  width : 250px;
+  height : 510px;
+  background-color : #dcdcdc;
+  z-index : 6000;
+  display : none;
+}
+
+#files{
+  position : relative;
+  margin : 10px;
+  
+  background-color : white;
+  width : 230px;
+  height : 450px;
+  overflow : auto;
+}
+
+#fileTitle{
+  font-family : Georgia, serif;
+  font-style : italic; 
+  margin-left : 10px;
+  margin-top : 10px;
+}
+
+
+form{
+  padding :0;
+  margin : 0;
+}
+input{
+  border : 1px solid gray;
+  color : gray;
+  padding : 4px;
+}
+
+ul{
+  padding : 0;
+  margin : 0;
+  background-color : white;
+}
+
+li{
+  list-style : none;
+}
+
+li, .file {
+  font-size : 12px;
+  margin: 0;
+  cursor : pointer;
+  background-color : white;
+  font-family : Georgia, serif;
+  border-bottom : 1px solid #cccccc;
+  padding : 5px 10px 5px 10px;
+}
+
+textarea, input{ 
+  outline:none;
+}
+
